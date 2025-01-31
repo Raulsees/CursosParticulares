@@ -40,6 +40,24 @@ app.post('/cursos', async (req, res) => {
     res.status(201).json({}); // ---> Aquí damos el OK al registrar el nuevo juego. No devuelve nada
 });
 
+//modificar curso
+ app.put('/cursos/:id_curso', async (req, res) => {
+    await db('cursos').update({
+        nombre: req.body.nombre,
+        duracion: req.body.duracion,
+        precio: req.body.precio,
+        id_centro: req.body.id_centro
+    }).where({id_curso: req.params.id_curso});
+
+    res.status(204).json({});
+});
+
+//borrar curso
+app.delete('/cursos/:id_curso', async(req, res) => {
+    await db('cursos').del().where({ id_curso: req.params.id_curso });
+
+    res.status(204).json({});
+});
 
 app.get('/centros/:id_centro', async(req, res) => {
     const formateca = await db('centros').select('*').where({ id_centro: req.params.id_centro }).first();
@@ -68,7 +86,23 @@ app.post('/alumnos', async (req, res) => {
     res.status(201).json({}); // ---> Aquí damos el OK al registrar el nuevo juego. No devuelve nada
 });
 
+//modificar alumnos
+app.put('/alumnos/:id_alumno', async (req, res) => {
+    await db('alumnos').update({
+        nombre: req.body.nombre,
+        email: req.body.email,
+        dni: req.body.dni
+    }).where({id_alumno: req.params.id_alumno});
 
+    res.status(204).json({});
+});
+
+//borrar alumnos
+app.delete('/alumnos/:id_alumno', async(req, res) => {
+    await db('alumnos').del().where({ id_alumno: req.params.id_alumno });
+
+    res.status(204).json({});
+});
 
 //mostrar profesores
 app.get('/profesores', async(req, res) => {
@@ -92,6 +126,23 @@ app.post('/profesores', async (req, res) => {
     res.status(201).json({}); // ---> Aquí damos el OK al registrar el nuevo juego. No devuelve nada
 });
 
+//modificar profesores
+app.put('/profesores/:id_profesor', async (req, res) => {
+    await db('profesores').update({
+        nombre: req.body.nombre,
+        email: req.body.email,
+        rama_conocimiento: req.body.rama_conocimiento
+    }).where({id_profesor: req.params.id_profesor});
+
+    res.status(204).json({});
+});
+
+//borrar profesores
+app.delete('/profesores/:id_profesor', async(req, res) => {
+    await db('profesores').del().where({ id_profesor: req.params.id_profesor });
+
+    res.status(204).json({});
+});
 
 
 app.listen(8080, () => {
