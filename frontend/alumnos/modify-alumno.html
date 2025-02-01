@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../src/css/styles.css">
+        <script type="module" src="modify-alumno.js"></script>
+    </head>
+    <body onload="showAlumno()">
+        <div class="container">
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../src/index/index.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../profesores/view-profesor.html">Teachers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="view-alumno.html">Students</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <h1>Modify Student</h1>
+            <form id="modifyForm" class="form">
+                <div class="form-group">
+                    <label for="nombre">Name:</label>
+                    <input class="form-control" type="text" id="nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">email:</label>
+                    <input class="form-control" type="text" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="dni">ID:</label>
+                    <input class="form-control" type="text" id="dni">
+                </div>
+                <button type="button" class="btn btn-primary" onClick="saveChanges()">Modify</button>
+            </form>
+        </div>
+    </body>
+</html>

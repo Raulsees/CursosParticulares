@@ -1,0 +1,30 @@
+{
+    "name": "formateca-frontend",
+    "version": "0.1",
+    "source": [
+            "src/index/index.html",
+            "cursos/add-curso.html",
+            "cursos/modify-curso.html",
+            "/profesores/add-profesor.html",
+            "/profesores/view-profesor.html",
+            "/profesores/modify-profesor.html",
+            "/alumnos/add-alumno.html",
+            "/alumnos/view-alumno.html",
+            "/alumnos/modify-alumno.html"
+            ],
+    "type": "module",
+    "scripts": {
+        "start": "parcel --no-cache",
+        "build": "parcel build"
+    },
+    "devDependencies": {
+        "buffer": "^6.0.3",
+        "parcel": "latest",
+        "process": "^0.11.10",
+        "util": "^0.12.5"
+    },
+    "dependencies": {
+        "axios": "^1.7.7",
+        "toastify-js": "1.12.0"
+    }
+}
