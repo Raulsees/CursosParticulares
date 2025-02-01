@@ -1,0 +1,354 @@
+[
+  {
+    "v": 6,
+    "name": "formateca",
+    "folders": [
+      {
+        "v": 6,
+        "name": "cursos",
+        "folders": [],
+        "requests": [
+          {
+            "v": "11",
+            "name": "cursos",
+            "method": "GET",
+            "endpoint": "http://localhost:8080/cursos",
+            "params": [],
+            "headers": [],
+            "preRequestScript": "",
+            "testScript": "",
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "body": {
+              "contentType": null,
+              "body": null
+            },
+            "requestVariables": [],
+            "responses": {}
+          },
+          {
+            "v": "11",
+            "name": "cursos/:id_curso",
+            "method": "GET",
+            "endpoint": "http://localhost:8080/cursos/1",
+            "params": [],
+            "headers": [],
+            "preRequestScript": "",
+            "testScript": "",
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "body": {
+              "contentType": "application/json",
+              "body": ""
+            },
+            "requestVariables": [],
+            "responses": {}
+          },
+          {
+            "v": "11",
+            "name": "addcurso",
+            "method": "POST",
+            "endpoint": "http://localhost:8080/cursos",
+            "params": [],
+            "headers": [],
+            "preRequestScript": "",
+            "testScript": "",
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "body": {
+              "contentType": "application/json",
+              "body": "{\n    \"nombre\": \"filosofia\",\n    \"duracion\": \"150\",\n    \"precio\": \" 25\",\n  \t\"id_centro\": 1\n}"
+            },
+            "requestVariables": [],
+            "responses": {}
+          },
+          {
+            "v": "11",
+            "name": "modifyCurso",
+            "method": "PUT",
+            "endpoint": "http://localhost:8080/cursos/1",
+            "params": [],
+            "headers": [],
+            "preRequestScript": "",
+            "testScript": "",
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "body": {
+              "contentType": "application/json",
+              "body": "{\n    \"nombre\": \"ingles\",\n    \"duracion\": \"23\",\n    \"precio\": \"14\",\n  \t\"id_centro\": \"2\"\n}"
+            },
+            "requestVariables": [],
+            "responses": {}
+          },
+          {
+            "v": "11",
+            "name": "delCurso",
+            "method": "DELETE",
+            "endpoint": "http://localhost:8080/cursos/1",
+            "params": [],
+            "headers": [],
+            "preRequestScript": "",
+            "testScript": "",
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "body": {
+              "contentType": null,
+              "body": null
+            },
+            "requestVariables": [],
+            "responses": {}
+          }
+        ],
+        "auth": {
+          "authActive": true,
+          "authType": "inherit"
+        },
+        "headers": [],
+        "_ref_id": "coll_m6l3dc1s_77873bfe-52ae-47d8-b63c-da842a451cf8"
+      },
+      {
+        "v": 6,
+        "name": "alumnos",
+        "folders": [],
+        "requests": [
+          {
+            "v": "11",
+            "name": "alumnos",
+            "method": "GET",
+            "endpoint": "http://localhost:8080/alumnos",
+            "params": [],
+            "headers": [],
+            "preRequestScript": "",
+            "testScript": "",
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "body": {
+              "contentType": null,
+              "body": null
+            },
+            "requestVariables": [],
+            "responses": {}
+          },
+          {
+            "v": "11",
+            "name": "alumnos/:id_alumno",
+            "method": "GET",
+            "endpoint": "http://localhost:8080/alumnos/1",
+            "params": [],
+            "headers": [],
+            "preRequestScript": "",
+            "testScript": "",
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "body": {
+              "contentType": null,
+              "body": null
+            },
+            "requestVariables": [],
+            "responses": {}
+          },
+          {
+            "v": "11",
+            "name": "addalumno",
+            "method": "POST",
+            "endpoint": "http://localhost:8080/alumnos",
+            "params": [],
+            "headers": [],
+            "preRequestScript": "",
+            "testScript": "",
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "body": {
+              "contentType": "application/json",
+              "body": "{\n    \"nombre\": \"pablo\",\n    \"email\": \"pablo@mail\",\n    \"dni\": \"1323F\"\n}"
+            },
+            "requestVariables": [],
+            "responses": {}
+          },
+          {
+            "v": "11",
+            "name": "modifyAlumno",
+            "method": "PUT",
+            "endpoint": "http://localhost:8080/profesores/1",
+            "params": [],
+            "headers": [],
+            "preRequestScript": "",
+            "testScript": "",
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "body": {
+              "contentType": "application/json",
+              "body": "{\n  \t\"nombre\": \"Paquita\",\n    \"email\": \"paquita@gmail\",\n    \"rama_conocimiento\": \"Frances\"\n}"
+            },
+            "requestVariables": [],
+            "responses": {}
+          },
+          {
+            "v": "11",
+            "name": "delAlumnos",
+            "method": "DELETE",
+            "endpoint": "http://localhost:8080/alumnos/1",
+            "params": [],
+            "headers": [],
+            "preRequestScript": "",
+            "testScript": "",
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "body": {
+              "contentType": null,
+              "body": null
+            },
+            "requestVariables": [],
+            "responses": {}
+          }
+        ],
+        "auth": {
+          "authActive": true,
+          "authType": "inherit"
+        },
+        "headers": [],
+        "_ref_id": "coll_m6l3dirb_0ee388b2-31c3-4897-8dea-696e7ba586fd"
+      },
+      {
+        "v": 6,
+        "name": "profesores",
+        "folders": [],
+        "requests": [
+          {
+            "v": "11",
+            "name": "profesores",
+            "method": "GET",
+            "endpoint": "http://localhost:8080/profesores",
+            "params": [],
+            "headers": [],
+            "preRequestScript": "",
+            "testScript": "",
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "body": {
+              "contentType": null,
+              "body": null
+            },
+            "requestVariables": [],
+            "responses": {}
+          },
+          {
+            "v": "11",
+            "name": "profesores/:id_profesor",
+            "method": "GET",
+            "endpoint": "http://localhost:8080/profesores/1",
+            "params": [],
+            "headers": [],
+            "preRequestScript": "",
+            "testScript": "",
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "body": {
+              "contentType": null,
+              "body": null
+            },
+            "requestVariables": [],
+            "responses": {}
+          },
+          {
+            "v": "11",
+            "name": "addprofesor",
+            "method": "POST",
+            "endpoint": "http://localhost:8080/profesores",
+            "params": [],
+            "headers": [],
+            "preRequestScript": "",
+            "testScript": "",
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "body": {
+              "contentType": "application/json",
+              "body": "{\n    \"nombre\": \"pablo\",\n    \"email\": \"pablo@mail\",\n    \"rama_conocimiento\": \"mates\"\n}"
+            },
+            "requestVariables": [],
+            "responses": {}
+          },
+          {
+            "v": "11",
+            "name": "modifyProfesor",
+            "method": "PUT",
+            "endpoint": "http://localhost:8080/alumnos/1",
+            "params": [],
+            "headers": [],
+            "preRequestScript": "",
+            "testScript": "",
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "body": {
+              "contentType": "application/json",
+              "body": "{\n  \t\"nombre\": \"pep\",\n    \"email\": \"pepe@gmail\",\n    \"dni\": \"23341T\"\n}"
+            },
+            "requestVariables": [],
+            "responses": {}
+          },
+          {
+            "v": "11",
+            "name": "delProfesor",
+            "method": "DELETE",
+            "endpoint": "http://localhost:8080/profesores/1",
+            "params": [],
+            "headers": [],
+            "preRequestScript": "",
+            "testScript": "",
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "body": {
+              "contentType": null,
+              "body": null
+            },
+            "requestVariables": [],
+            "responses": {}
+          }
+        ],
+        "auth": {
+          "authActive": true,
+          "authType": "inherit"
+        },
+        "headers": [],
+        "_ref_id": "coll_m6l3duq6_24f514d0-da8a-4693-9180-8b663285d14f"
+      }
+    ],
+    "requests": [],
+    "auth": {
+      "authActive": true,
+      "authType": "none"
+    },
+    "headers": [],
+    "_ref_id": "coll_m6l0c7ro_abe3c862-74fe-40f8-88a8-9f5ae07817a7"
+  }
+]
