@@ -21,3 +21,16 @@ Se crean tablas donde los alumnos podrían apuntarse a varios cursos particulare
 -Hemos añadido un fichero .JSON de HoppScotch haciendo las pruebas de llamadas a la API.
 -Hemos traducido todos los textos de la aplicación.
 
+
+Instalación:
+
+Descargas el archivo .zip de Git
+Para ejecutar el programa lo primero será entrar dentro de las carpetas backend y frontend. Una vez dentro tendremos que ejecutar npm update, npm install y npm start en ambas.
+Una vez dado el OK por parte de ambos directorios accederemos a un navegador y escribiremos localhost:1234 y tendremos el menú principal con la aplicación funcionando.
+
+
+Autores:
+
+Raúl Segura - Primero DAM
+Marcos Martínez - Primero DAM
+Juan Ferrés - Primero DAM
