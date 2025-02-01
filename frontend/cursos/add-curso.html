@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../src/css/styles.css">
+        <script type="module" src="register-curso.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="active" href="../src/index/index.html">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../profesores/view-profesor.html">Teachers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../alumnos/view-alumno.html">Students</a>
+                        </li>
+                    </ul>
+                </ul>
+            </nav>
+
+            <h1>Add new course</h1>
+            <form class="form">
+                <input class="form-control" type="text" placeholder="Name" id="nombre">
+                <input class="form-control" type="text" placeholder="Duration" id="duracion">
+                <input class="form-control" type="text" placeholder="Price" id="precio">
+                <input class="form-control" type="text" placeholder="Id facility" id="id_centro">
+                <button type="button" class="btn btn-primary" onClick="addCurso()">Register</button>
+            </form>
+        </div>
+    </body>
+</html>

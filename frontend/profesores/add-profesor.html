@@ -1,0 +1,33 @@
+<!-- add-user.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../src/css/styles.css">
+        <script type="module" src="register-profesor.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../src/index/index.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="view-profesor.html">Teachers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../alumnos/view-alumno.html">Students</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <h1>Register new teacher</h1>
+            <form class="form">
+                <input class="form-control" type="text" placeholder="Name" id="nombre">
+                <input class="form-control" type="text" placeholder="Email" id="email">
+                <input class="form-control" type="text" placeholder="Speciality" id="rama_conocimiento">
+                <button type="button" class="btn btn-primary" onClick="addProfesor()">Register</button>
+            </form>
+        </div>
+    </body>
+</html>
